@@ -202,7 +202,7 @@ public class Player : MonoBehaviour, IKitchenObjectParent
             }
         }
 
-        transform.forward = Vector3.Slerp(transform.forward, moveDir, rotationSpeed * Time.deltaTime);
+        transform.forward = moveDir;
     }
 
     private void GameInput_OnInteractAction(object sender, EventArgs e)
